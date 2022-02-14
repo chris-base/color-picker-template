@@ -43,8 +43,8 @@
 
 #colorWheel {
   flex: 1;
-  width: 200px;
-  height: 200px;
+  /* width: 200px; */
+  height: 198px;
   background-image: url("../public/colorWheel.png");
   background-size: 200px;
   background-repeat: no-repeat;
@@ -53,8 +53,83 @@
 }
 
 #colorInfoContainer {
-  background-color: red;
-  height: 200px;
+  /* background-color: red; */
+  max-height: 200px;
   width: auto;
   flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.colorSliderContainer {
+  width: 100%;
+  border-top: 1px solid #dedede;
+  border-right: 1px solid #dedede;
+  flex: 1;
+  display: flex;
+  padding: 5px;
+}
+
+.colorSlider {
+  flex: 7.5;
+}
+
+#redSlider {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 0, 0, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+#greenSlider {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 255, 0, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+#blueSlider {
+  background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 255, 1) 100%, rgba(0, 212, 255, 1) 100%);
+}
+
+.colorNumber {
+  flex: 2.5;
+  margin-left: 5px;
+  border: 1px solid #dedede;
+}
+
+.colorNumberText {
+  line-height: 0;
+}
+
+#htmlContainer {
+  border-bottom: 1px solid #dedede;
+  display: flex;
+  align-items: center;
+}
+
+#htmlInputContainer {
+  display: flex;
+  border: 1px solid #dedede;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10px;
+}
+
+#htmlInput {
+  font-size: 15px;
+  letter-spacing: 1px;
+  line-height: 0;
+  color: #424242;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+#copyContainer {
+  flex: 2;
+}
+
+#copyButton {
+  margin: 0 auto;
+  height: 30px;
+  width: 30px;
+  background-image: url("../public/copy_black.png");
+  background-size: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
 }

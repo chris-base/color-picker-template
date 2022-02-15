@@ -47,7 +47,47 @@ const ColorPickerContainer = () => {
           </div>
         </div>
 
-        <div id='prevColorContainer'></div>
+        <div id='prevColorContainer'>
+          <div id='currOldColorContainer'>
+            <div id='currOldTextContainer'>
+              <p className='currOldText'>Current:</p>
+
+              <p className='currOldText'>Old:</p>
+            </div>
+
+            <div id='currOldColorBoxContainer'>
+              <div className='currOldColor'>
+                <div className='colorBox' />
+              </div>
+
+              <div className='currOldColor'>
+                <div className='colorBox' id='colorBox2' />
+              </div>
+            </div>
+          </div>
+
+          <div id='prevColorsBoxContainer'>
+            <div className='boxRow'>
+              <div className='oldColorBoxes' id='colorBox-0' />
+
+              <div className='oldColorBoxes' id='colorBox-1' />
+
+              <div className='oldColorBoxes' id='colorBox-2' />
+
+              <div className='oldColorBoxes' id='colorBox-3' />
+            </div>
+
+            <div className='boxRow'>
+              <div className='oldColorBoxes' id='colorBox-4' />
+
+              <div className='oldColorBoxes' id='colorBox-5' />
+
+              <div className='oldColorBoxes' id='colorBox-6' />
+
+              <div className='oldColorBoxes' id='colorBox-7' />
+            </div>
+          </div>
+        </div>
 
         <div id='buttonContainer'></div>
       </div>

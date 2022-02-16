@@ -89,7 +89,28 @@ const ColorPickerContainer = () => {
           </div>
         </div>
 
-        <div id='buttonContainer'></div>
+        <div id='buttonContainer'>
+          <div id='leftButton'>
+            <div id='pickButton' className='appButtons'>
+              <p id='pickText' className='buttonTexts'>
+                Pick Color
+              </p>
+            </div>
+          </div>
+
+          <div id='rightButton'>
+            <div id='quitButton' className='appButtons'>
+              <p id='quitText' className='buttonTexts'>
+                Quit
+              </p>
+            </div>
+            <div id='helpButton' className='appButtons'>
+              <p id='helpText' className='buttonTexts'>
+                Help
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

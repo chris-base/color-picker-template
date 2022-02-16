@@ -2,7 +2,7 @@
   /* background-color: cyan; */
   margin-top: 200px;
   width: 450px;
-  height: 400px;
+  height: 380px;
   border: 1px solid black;
 }
 
@@ -232,4 +232,41 @@
 
 #colorBox-7 {
   background-color: #ff0066;
+}
+
+#buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+#rightButton {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 150px;
+  justify-content: space-between;
+}
+
+.appButtons {
+  border: 1px solid black;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buttonTexts {
+  line-height: 0px;
+  margin-top: 0 auto;
+}
+
+#pickButton {
+  color: #006f94;
+  border-color: #006f94;
+}
+
+#quitButton {
+  color: #ff0000;
+  border-color: #ff0000;
 }
